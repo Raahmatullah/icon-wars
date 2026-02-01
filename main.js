@@ -55,4 +55,19 @@ function showToast(message, delay = 2500) {
     }, 2500);
 
   }, delay); 
+
+}
+
+window.onload = function() {
+   starter(); 
+  };
+
+let starter = function() {
+  let botton = document.getElementById("stage")
+    let button = document.createElement("div");
+    button.style.marginTop = "20px";
+    button.textContent = "Start Game";
+    button.id = "floatButton";
+    botton.appendChild(button);
+    
 }
