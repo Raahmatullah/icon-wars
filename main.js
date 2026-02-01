@@ -60,6 +60,7 @@ function showToast(message, delay = 2500) {
 
 window.onload = function() {
    starter(); 
+   starter2(); 
   };
 
 let starter = function() {
@@ -69,5 +70,14 @@ let starter = function() {
     button.textContent = "Start Game";
     button.id = "floatButton";
     botton.appendChild(button);
+    
+}
+let starter2 = function() {
+  let botton2 = document.getElementById("stage")
+    let button2 = document.createElement("div");
+    button2.style.marginTop = "20px";
+    button2.textContent = "Start Game";
+    button2.id = "floatButton";
+    botton2.appendChild(button2);
     
 }
