@@ -22,25 +22,25 @@ let fighters = [
 let stageEl = document.getElementById("stage")
 let fightButton = document.getElementById("fightButton")
 let pick = document.getElementById("openPopup")
-fightButton.addEventListener("click", function() {
+fightButton.addEventListener("click", function () {
 
-    fightButton.disabled = true;
-    fightButton.textContent = "Generating Fight...";
-    setTimeout(() => {
-        fightButton.disabled = false;
-        fightButton.textContent = "Pick Fighters!";
-    },5000)
-    let randomIndexOne = Math.floor( Math.random() * fighters.length )
-    let randomIndexTwo = Math.floor( Math.random() * fighters.length )
-    
-    stageEl.textContent = fighters[randomIndexOne].icon + " vs " + fighters[randomIndexTwo].icon
-    if (fighters[randomIndexOne].value > fighters[randomIndexTwo].value) {
-         showToast(`${fighters[randomIndexOne].icon} Wins!`);
-    } else if (fighters[randomIndexOne].value < fighters[randomIndexTwo].value) {
-         showToast(`${fighters[randomIndexTwo].icon} Wins!`);
-    } else {
-         showToast("Everyone Wins! 🤝");
-    }
+  fightButton.disabled = true;
+  fightButton.textContent = "Generating Fight...";
+  setTimeout(() => {
+    fightButton.disabled = false;
+    fightButton.textContent = "Pick Fighters!";
+  }, 5000)
+  let randomIndexOne = Math.floor(Math.random() * fighters.length)
+  let randomIndexTwo = Math.floor(Math.random() * fighters.length)
+
+  stageEl.textContent = fighters[randomIndexOne].icon + " vs " + fighters[randomIndexTwo].icon
+  if (fighters[randomIndexOne].value > fighters[randomIndexTwo].value) {
+    showToast(`${fighters[randomIndexOne].icon} Wins!`);
+  } else if (fighters[randomIndexOne].value < fighters[randomIndexTwo].value) {
+    showToast(`${fighters[randomIndexTwo].icon} Wins!`);
+  } else {
+    showToast("Everyone Wins! 🤝");
+  }
 })
 function showToast(message, delay = 2500) {
   const toast = document.getElementById("toast");
@@ -54,7 +54,7 @@ function showToast(message, delay = 2500) {
       toast.classList.remove("show");
     }, 2500);
 
-  }, delay); 
+  }, delay);
 
 }
 
