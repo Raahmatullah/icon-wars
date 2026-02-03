@@ -58,8 +58,4 @@ function showToast(message, delay = 2500) {
 
 }
 
-window.onload = function() {
-   starter(); 
-   starter2(); 
-  };
 
