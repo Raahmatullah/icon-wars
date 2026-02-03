@@ -21,7 +21,7 @@ let fighters = [
 
 let stageEl = document.getElementById("stage")
 let fightButton = document.getElementById("fightButton")
-
+let pick = document.getElementById("floatButton")
 fightButton.addEventListener("click", function() {
 
     fightButton.disabled = true;
@@ -57,5 +57,7 @@ function showToast(message, delay = 2500) {
   }, delay); 
 
 }
+
+
 
 
