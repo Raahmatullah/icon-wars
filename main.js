@@ -21,7 +21,7 @@ let fighters = [
 
 let stageEl = document.getElementById("stage")
 let fightButton = document.getElementById("fightButton")
-let pick = document.getElementById("floatButton")
+let pick = document.getElementById("openPopup")
 fightButton.addEventListener("click", function() {
 
     fightButton.disabled = true;
