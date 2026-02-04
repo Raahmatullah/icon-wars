@@ -65,7 +65,7 @@ h1 {
 }
 
 .popup {
-    display:block;
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -108,4 +108,13 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 6px;
     transition: transform 0.2s, background 0.2s;
+}
+
+.character:hover {
+    transform: scale(1.1);
+    background: #f0f0f0;
+}
+
+.character span {
+    font-size: 40px;
 }
