@@ -18,6 +18,10 @@ let fighters = [
   { icon: "🦁", value: 3 }
 ];
 
+const popup = document.getElementById("characterPopup");
+const openBtn = document.getElementById("openPopup");
+const closeBtn = document.getElementById("closePopup");
+const characterList = document.getElementById("characterList");
 
 let stageEl = document.getElementById("stage")
 let fightButton = document.getElementById("fightButton")
