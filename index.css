@@ -65,7 +65,7 @@ h1 {
 }
 
 .popup {
-    display: none;
+    display:block;
     position: fixed;
     top: 0;
     left: 0;
@@ -75,6 +75,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
 .popupContent {
     background: #fff8eb;
     padding: 20px;
@@ -83,4 +84,28 @@ h1 {
     position: relative;
     width: 80%;
     max-width: 600px;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: transform 0.2s, background 0.2s;
 }
