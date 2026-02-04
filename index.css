@@ -75,3 +75,12 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+.popupContent {
+    background: #fff8eb;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+}
